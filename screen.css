@@ -1,4 +1,102 @@
-/* Add screen styles below */
-a.active {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #white;           
+}
+
+#logo img {
+    height: auto;
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-size: 18px; 
+    gap: 20px;
+} 
+
+.nav-links li {
+    margin: 0 15px;}
+
+.nav-links a {
+    text-decoration: none;         
+    color: #333;                
+    font-size: 20px;                
+    padding: 5px 10px;             
+    transition: background-color 0.3s ease; 
+}
+.nav-links a:hover {
+    background-color: #575757;   
+    border-radius: 5px;           
+}
+
+h2 {
+    font-size: 36px; 
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: top 10px; ;
+    border-bottom: 3px solid #4CAF50; 
+    padding-bottom: 10px;
+}
+
+#slideshow {
+    position: relative;
+    width: 600px;
+    height: 500px; 
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #4CAF50;
+    border-radius: 10px; 
+}
+
+#slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+#slideshow .active {
+    opacity: 1; 
+}
+
+.login-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
 }
