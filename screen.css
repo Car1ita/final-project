@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #white;           
+    background-color: #f9f9f9;           
 }
 
 #logo img {
@@ -44,7 +44,7 @@ h2 {
     font-size: 36px; 
     font-family: 'Arial', sans-serif;
     color: #333;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -54,17 +54,32 @@ h2 {
     padding-bottom: 10px;
 }
 
+.layout-container {
+    display: flex;                 
+    align-items: flex-start;       
+    justify-content: space-between;
+    gap: 10px;                     
+    padding: 10px;
+    flex-wrap: wrap;     
+}
+
+.title-section {
+    width: 100%;                  
+    text-align: left;    
+    margin-top: 5px;         
+    margin-bottom: 10px;          
+}
+
+
 #slideshow {
     position: relative;
-    width: 600px;
-    height: 500px; 
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60%;                  
+    max-width: 600px;             
+    height: 500px;
     border: 5px solid #4CAF50;
     border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 #slideshow .slide {
@@ -99,4 +114,66 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.content-section {
+    width: 30%;                    
+    margin-left: auto;             
+    display: flex;
+    flex-direction: column;        
+    gap: 10px;
+}
+
+
+
+.banners {
+    text-align: right;          
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.banners img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    text-align: right;           
+    padding: 10px;
+    background-color: #f3f3f3;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.social-media img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer li a:hover {
+    color: #ddd;
 }
