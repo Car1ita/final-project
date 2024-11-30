@@ -164,7 +164,7 @@ footer {
     background-color: #4CAF50;
     padding: 10px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 footer ul {
@@ -200,7 +200,7 @@ footer li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -263,3 +263,51 @@ footer li a:hover {
     background-size: cover;
     height: 100%; 
 }
+
+/* css for about us! */
+#about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between each block */
+  }
+  
+  /* Alternating Blocks */
+  .about-block {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+  }
+  
+  .about-block:nth-child(even) {
+    flex-direction: row-reverse; /* Reverse layout for alternating effect */
+  }
+  
+  /* Text Styling */
+  .about-text {
+    flex: 1; /* Allow text to take up half the space */
+  }
+  
+  .about-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Image Styling */
+  .about-image {
+    flex: 1; /* Allow image to take up half the space */
+    text-align: center; /* Center the image */
+  }
+  
+  .about-image img {
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Optional max width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
