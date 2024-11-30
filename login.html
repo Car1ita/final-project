@@ -9,32 +9,48 @@
   </head>
   <body>
     <header>
-      <h1>Home</h1>
+      <nav class="navbar">
+        <div id="logo">
+          <a href="index.html">
+            <img src="LOGOOO.png" alt="Logo">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="uploads.html">Pictures</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="about.html">About Us!</a></li>
+          <li><a href="questions.html">Frequently Asked</a></li>
+        </ul>
+        <div>
+          <a href="login.html">
+            <button type="button">Log In</button>
+          </a>
+        </div>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="uploads.html">Pictures</a></li>
-        <li><a href="workshop.html">Workshop</a></li>
-        <li><a href="about.html">About Us!</a></li>
-        <li><a href="questions.html">Frequently Asked</a></li>
-      </ul>
-    </nav>
-    <main>
-        <section>
-            <h1>Log In</h1>
-            <form action="orders.html" method="get">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-                <button type="submit">Log In</button>
-            </form>
-            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-        </section>
-    </main>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Login Box Section -->
+      <div class="login-box">
+        <h1>Log In</h1>
+        <form action="orders.html" method="get">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </div>
+
+      <!-- Image Box Section -->
+      <div class="image-box"></div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

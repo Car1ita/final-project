@@ -9,46 +9,50 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div id='logo'>
-          <a href=""index.html>
-            <img src="LOGOOO.png" alt="Logo">
-          </a>
-        </div>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="uploads.html">Pictures</a></li>
-          <li><a href="workshop.html">Workshop</a></li>
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="about.html">About Us!</a></li>
-          <li><a href="questions.html">Frequently Asked</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about-desc">
-        <h2>Frequently Asked Questions</h2>
-        <div>
-            <h3>Question 1</h3>
-            <p>Answer to question 1...</p>
-        </div>
-      </section>
+        <nav class="navbar"> 
+          <div id='logo'>
+            <a href=""index.html>
+              <img src="LOGOOO.png" alt="Logo">
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="uploads.html">Pictures</a></li>
+            <li><a href="workshop.html">Workshop</a></li>
+            <li><a href="about.html">About Us!</a></li>
+            <li><a href="questions.html">Frequently Asked</a></li>
+          </ul>
+          <div>
+            <a href="login.html">
+              <button type="button">Log In</button>
+            </a>
+          </div>
+        </nav>
+      </header>
+        <main>
+            <section id="about-desc">
+            <h2>Frequently Asked Questions</h2>
+            <div>
+                <h3>Question 1</h3>
+                <p>Answer to question 1...</p>
+            </div>
+            </section>
 
-      <section id="contact-info">
-        <h3>Conract Us!</h3>
-        <p>Email: </p>
-        <p>Number:</p>
-        <p>Fax: </p>
-      </section>
-      <section id="ask-now">
-        <label for="question">Your Question:</label>
-        <textarea id="question" name="question" rows="4" required></textarea>
-        <form action="submit_question.php" method="post">
-          
-            <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
+            <section id="contact-info">
+            <h3>Conract Us!</h3>
+            <p>Email: </p>
+            <p>Number:</p>
+            <p>Fax: </p>
+            </section>
+            <section id="ask-now">
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            <form action="submit_question.php" method="post">
+                
+                <button type="submit">Submit</button>
+            </form>
+            </section>
+        </main>
     <script src="index.js"></script>
   </body>
 </html>
