@@ -9,4 +9,5 @@ function showNextSlide() {
 }
 
 setInterval(showNextSlide, 3000); 
-showNextSlide();
+showNextSlide(); 
+

@@ -259,7 +259,6 @@ footer li a:hover {
 
 .image-box {
     flex: 1;
-    background: url('9e283c29711e11845e8a6ac8c7491598.jpg') no-repeat center center;
     background-size: cover;
     height: 100%; 
 }
@@ -268,46 +267,72 @@ footer li a:hover {
 #about-content {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Space between each block */
+    gap: 20px;
+    padding: 20px;
   }
   
-  /* Alternating Blocks */
   .about-block {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between text and image */
+    gap: 20px;
+    flex-wrap: wrap; 
   }
   
-  .about-block:nth-child(even) {
-    flex-direction: row-reverse; /* Reverse layout for alternating effect */
+  
+  .about-box, .box-image {
+    border: 2px solid #ccc; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+    width: 300px; 
+    text-align: center; 
   }
   
-  /* Text Styling */
-  .about-text {
-    flex: 1; /* Allow text to take up half the space */
+
+  .box-image  img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
   }
   
-  .about-text h3 {
-    font-size: 24px;
+  
+  @media (max-width: 768px) {
+    .about-box, .image-box {
+      width: 100%; 
+    }
+  }
+
+  #contact-info {
+    background-color: #f4f4f4; 
+    text-align: center;
+    border-top: 2px solid #ddd;
+  }
+  
+  #contact-info h3 {
+    font-size: 10;
+    margin-bottom: 15px;
     color: #333;
-    margin-bottom: 10px;
   }
   
-  .about-text p {
-    font-size: 18px;
-    line-height: 1.6;
+  .contact-items {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+  }
+  
+  .contact-items span {
+    font-size: 8;
     color: #555;
+    white-space: nowrap; 
   }
   
-  /* Image Styling */
-  .about-image {
-    flex: 1; /* Allow image to take up half the space */
-    text-align: center; /* Center the image */
+  .contact-items a {
+    color: #007bff;
+    text-decoration: none;
   }
   
-  .about-image img {
-    width: 100%; /* Make image responsive */
-    max-width: 400px; /* Optional max width */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  .contact-items a:hover {
+    text-decoration: underline; 
   }
