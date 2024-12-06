@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Workshop!</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="works.css">
   </head>
   <body>
     
@@ -30,8 +30,33 @@
     </header>
 
         <main>
-            <h1>Create Your Own Picture</h1>
-            
+            <h1>Create Your Own Set</h1>
+
+            <div id="workspace">
+              <div id="design-area">
+                <p>The WorkSpace!</p>
+              </div>
+            <div id="tool-area">
+              <h2>Tools</h2>
+              <button>Brush</button>
+              <button>Fill</button>
+              <button>Shape</button>
+              <button>Text</button>
+              <button>Color Picker</button>
+              <button>Pen</button>
+              <button id="done-button">Done</button>
+            </div>
+          </div>
+
+          <div id="order-modal" class="modal" hidden>
+            <div class="modal-content">
+              <button id="close-modal" class="close-button">X</button>
+              <p>Do you want to save or finish your design?</p>
+              <button id="save-design">Save Design</button>
+              <button id="finish-design">Finish Design</button>
+            </div>
+          </div>
+
             <footer>
               <ul>
                 <li><a href="contact.html">Contact Us</a></li>
