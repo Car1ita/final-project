@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Picture Uploads</title>
-    <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="pics.css">
   </head>
   <body>
     <header>
@@ -19,44 +19,67 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="login.html">Log In</a></li>
-          <a href="orders.html">
-            <img src="file (1).png" alt="Order Now" class="order-icon">
+          <li>
+            <a href="orders.html">
+              <img src="file (1).png" alt="Order Now" class="order-icon">
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section>
+        <h2>Upload Your Picture</h2>
+        <form id="upload-form" action="upload_image.php" method="post" enctype="multipart/form-data">
+          <label for="image-upload">Choose a picture:</label>
+          <input type="file" id="image-upload" name="image" accept="image/*" required>
+          <label for="size-select">Select print size:</label>
+          <select id="size-select" name="size" required>
+            <option value="100">100 Pieces - $50</option>
+            <option value="300">300 Pieces - $70</option>
+            <option value="700">700 Pieces - $150</option>
+            <option value="1000">1000+ Pieces - $200-$700</option>
+          </select>
+          <button type="submit">Upload</button>
+        </form>
+      </section>
+
+      <section id="preview-section">
+        <h3>Preview & Edit</h3>
+        <div id="preview-container">
+          <p>No image uploaded yet</p>
+          <img id="image-preview" src="" alt="Image Preview" hidden>
+        </div>
+        <div id="edit-controls">
+          <button id="zoom-in">Zoom In</button>
+          <button id="zoom-out">Zoom Out</button>
+          <button id="rotate">Rotate</button>
+          <button id="crop">Crop</button>
+          <button id="resize">Resize</button>
+          <button id="apply-filters">Apply Filters</button>
+          <button id="done-editing">Done Editing</button>
+        </div>
+      </section>
     
-        <main>
-            <section>
-                <h2>Uploads!</h2>
-                <form action="upload_image.php"method='post'enctype='multipart/form-data'>
-                    <label for = 'image-upload'>Choose a picture:</label>
-                    <input type="file" id="image-upload" name="image" accept="image/*" required>
-                    <button type="submit">Upload</button>
-                </form>
-            </section>
-            <aside>
-                <h3>Focus Options</h3>
-                <ul>
-                    <li>Zoom In</li>
-                    <li>Zoom Out</li>
-                    <li>Rotate</li>
-                    <li>Crop</li>
-                    <li>Resize</li>
-                    <li>Filters</li>
-                </ul>
-                <form action="orders.html" method="get">
-                    <button type="submit">Submit and Send Love</button>
-                </form>
-            </aside>
-        </main>
-        <footer>
-          <ul>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="terms.html">Terms & Conditions</a></li>
-          </ul>
-        </footer>
-        
+      <div id="order-modal" class="modal" hidden>
+        <div class="modal-content">
+          <button id="close-modal" class="close-button">X</button>
+          <p>Do you want to order more pictures?</p>
+          <button id="order-more">Order More</button>
+          <button id="proceed-to-order">Proceed to Order</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+      </ul>
+    </footer>
+      
     <script src="index.js"></script>
   </body>
 </html>

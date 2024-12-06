@@ -19,70 +19,76 @@ showNextSlide();
 
 
 
-// JavaScript to handle form inputs and display the order
-document.getElementById("upload-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    handleFileUpload();
+function goToStep(step) {
+    document.querySelectorAll('.form-step').forEach(step => step.classList.add('hidden'));
+
+    document.getElementById('step${step}').classList.remove('hidden');
+}
+
+function goHome() {
+    window.location.href="index.html";
+
+}
+
+const selectedItems =["Custom Set - $100"]
+
+function updateOrderList() {
+    const orderList = document.getElementById("order-list");
+    orderList.innerHTML = '';
+
+    selectedItems.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        orderList.appendChild(listItem);
+    });
+}
+
+updateOrderList();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const imageUpload = document.getElementById("image-upload");
+    const imagePreview = document.getElementById("image-preview");
+    const previewContainer = document.getElementById("preview-container");
+    const modal = document.getElementById("order-modal");
+    const closeModalBtn = document.getElementById("close-modal");
+    const orderMoreBtn = document.getElementById("order-more");
+    const proceedToOrderBtn = document.getElementById("proceed-to-order");
+    const doneEditingBtn = document.getElementById("done-editing");
+
+    // Display uploaded image preview
+    imageUpload.addEventListener("change", () => {
+        const file = imageUpload.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imagePreview.src = e.target.result;
+                imagePreview.hidden = false;
+                previewContainer.querySelector("p").hidden = true;
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Show modal after clicking Done Editing
+    doneEditingBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent default form submission
+        modal.hidden = false;
+    });
+
+    // Close modal when the close button is clicked
+    closeModalBtn.addEventListener("click", () => {
+        modal.hidden = true;
+    });
+
+    // Handle modal actions
+    orderMoreBtn.addEventListener("click", () => {
+        modal.hidden = true;
+        window.location.href = "index.html"; // Redirect to home
+    });
+
+    proceedToOrderBtn.addEventListener("click", () => {
+        modal.hidden = true;
+        window.location.href = "orders.html"; // Redirect to orders page
+    });
 });
-
-function handleFileUpload() {
-    const fileInput = document.getElementById('file-upload');
-    const file = fileInput.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-        
-        reader.onload = function(e) {
-            const fileContent = e.target.result;
-            const fileExtension = file.name.split('.').pop().toLowerCase();
-
-            if (fileExtension === 'csv') {
-                // Handle CSV parsing
-                parseCSV(fileContent);
-            } else if (fileExtension === 'json') {
-                // Handle JSON parsing
-                parseJSON(fileContent);
-            }
-        };
-
-        reader.readAsText(file);
-    }
-}
-
-function parseCSV(csvContent) {
-    const rows = csvContent.split('\n');
-    const items = rows.map(row => row.trim()).filter(row => row.length > 0);
-    updateOrderList(items);
-}
-
-function parseJSON(jsonContent) {
-    try {
-        const items = JSON.parse(jsonContent);
-        updateOrderList(items);
-    } catch (e) {
-        alert('Invalid JSON file');
-    }
-}
-
-function updateOrder() {
-    const selectedItems = Array.from(document.getElementById('item-selection').selectedOptions)
-                                .map(option => option.value);
-    updateOrderList(selectedItems);
-}
-
-function updateOrderList(items) {
-    const orderList = document.getElementById('order-list');
-    orderList.innerHTML = ''; // Clear existing list
-
-    if (items.length === 0) {
-        orderList.innerHTML = '<li>No items selected</li>';
-    } else {
-        items.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.textContent = item;
-            orderList.appendChild(listItem);
-        });
-    }
-}
-
-
