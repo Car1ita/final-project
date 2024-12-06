@@ -1,91 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
-  </head> 
-  <body>
-
-    <header>
-      <nav class="navbar"> 
-        <div id="logo">
-          <a href="index.html">
-            <img src="LOGOOO.png" alt="Logo">
-          </a>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="login.html">Log In</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <div id="logo">
+        <a href="index.html">
+          <img src="LOGOOO.png" alt="Logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li>
           <a href="orders.html">
             <img src="file (1).png" alt="Order Now" class="order-icon">
-        </ul>
-      </nav>
-    </header>
-  
-  
-    <section class="layout-container">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Banner Section -->
+  <section class="banner-section">
+    <img src="Untitled design.jpg" alt="Banner" class="banner-image">
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Upload and Workshop Section -->
+    <div class="layout-container">
       <section id="uploads">
         <h2>Upload Your Pictures</h2>
-        <p>Already have an image or idea that you want to come to life? Upload your images here and we can take care of the rest!<p>
+        <p>
+          Already have an image or idea that you want to come to life? Upload your images here and we can take care of the rest!
+        </p>
         <button onclick="location.href='uploads.html'">Upload Pictures</button>
       </section>
-  
+
       <section id="workshop">
         <h2>Start Your Workshop</h2>
-        <p>Do you have an idea that you want to create? Here you are allowed to let your imagination roam free! Here you can create and build your own ideas while we take them and make them into a reality!</p>
+        <p>
+          Do you have an idea that you want to create? Here you can let your imagination roam free! Create and build your own ideas while we make them a reality.
+        </p>
         <button onclick="location.href='workshop.html'">Start Now</button>
       </section>
-  
-      
+    </div>
+
+    <div class="content-wrapper">
       <div class="side-by-side">
         <div class="slideshow-section">
-            <div id="slideshow">
-                <img class="slide" src="2f480fbe63756b74b47384a244e8afd8.jpg" alt="Slide 1">
-                <img class="slide" src="3c7f87756f5490cb997e04de86405a7a.jpg" alt="Slide 2">
-                <img class="slide" src="6cf0ad3187cd49067c77e82d68b53947.jpg" alt="Slide 3">
-                <img class="slide" src="e45c7e22140561254bfefb927dfffa13.jpg" alt="Slide 4">
-            </div>
+          <div id="slideshow">
+            <img class="slide active" src="2f480fbe63756b74b47384a244e8afd8.jpg" alt="Slide 1">
+            <img class="slide" src="3c7f87756f5490cb997e04de86405a7a.jpg" alt="Slide 2">
+            <img class="slide" src="6cf0ad3187cd49067c77e82d68b53947.jpg" alt="Slide 3">
+            <img class="slide" src="e45c7e22140561254bfefb927dfffa13.jpg" alt="Slide 4">
+          </div>
         </div>
-    
 
         <div class="sale-section">
-            <h2>Sale Items</h2>
-            <div class="sale-items">
-                <img src="file (2).png" alt="Sale Item 1">
-                <img src="file (3).png" alt="Sale Item 2">
-                <img src="file (1).png" alt="Sale Item 3">
-            </div>
+          <h2>Sale Items</h2>
+          <div class="icon-container">
+            <img src="file (2).png" alt="Sale Item 1">
+            <img src="file (3).png" alt="Sale Item 2">
+            <img src="file (1).png" alt="Sale Item 3">
+          </div>
         </div>
       </div>
-  
-      <!-- FAQ Section -->
-      <div class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-          <summary>What is this website about?</summary>
-          <p>This website allows you to upload pictures, view workshops, and shop for products.</p>
-        </details>
-        <details>
-          <summary>How do I order items?</summary>
-          <p>You can browse sale items and click the "Order Now" button to make a purchase.</p>
-        </details>
-      </div>
-  
-    </section>
-  
-    <footer>
-      <ul>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms & Conditions</a></li>
-      </ul>
-    </footer>
-    
-    <script src="index.js"></script>
-  </body>
-  </html>
+    </div>
+
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is this website about?</summary>
+        <p>
+          This website allows you to upload pictures, view workshops, and shop for products.
+        </p>
+      </details>
+      <details>
+        <summary>How do I order items?</summary>
+        <p>
+          You can browse sale items and click the "Order Now" button to make a purchase.
+        </p>
+      </details>
+    </div>
+  </main>
+
+
+  <footer>
+    <ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms & Conditions</a></li>
+    </ul>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
