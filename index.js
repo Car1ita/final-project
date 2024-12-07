@@ -9,14 +9,13 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
 }
 
 
-setInterval(NextSlide, 3000); 
-showNextSlide(); 
-
+setInterval(nextSlide, 3000);
+showSlide(currentIndex);
 
 
 function goToStep(step) {
