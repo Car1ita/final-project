@@ -2,12 +2,21 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color:#FFFFFF;
+    color: #2EC4B6;
 }
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
 
 header {
     background-color: white;
-    color: grey;
+    color: #2EC4B6;
     padding: 20px;
+    border-bottom: 2px solid #FF9F1C; 
 }
 
 #logo img {
@@ -32,6 +41,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     flex-grow: 1;
+    color: #2EC4B6;
 }
 
 .nav-links a {
@@ -54,6 +64,9 @@ header {
 .nav-links a.active {
     font-weight: bold;
 }
+.nav-links a:hover {
+    color: #FF9F1C;
+  }
 
 button {
     padding: 8px 16px;
@@ -61,6 +74,8 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    background-color: #FF9F1C; 
+    color: #FFFFFF;
 }
 
 button:hover {
@@ -87,7 +102,7 @@ section {
 
 h2, h3 {
     text-align: center;
-    color: #444;
+    color: #2EC4B6;
 }
 
 form label {
@@ -108,7 +123,7 @@ form button {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #FF9F1C; 
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -117,7 +132,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2EC4B6;
 }
 
 #preview-section {
@@ -190,7 +205,7 @@ button:hover {
   }
   
   .close-button:hover {
-    color: red;
+    background-color: #2EC4B6;
   }
 
 .modal-content p {
