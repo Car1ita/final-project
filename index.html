@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="screen.css">
-</head>
-<body>
-
-  <header>
-    <nav class="navbar">
-      <div id="logo">
-        <a href="index.html">
-          <img src="LOGOOO.png" alt="Logo">
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="login.html">Log In</a></li>
-        <li>
-          <a href="orders.html">
-            <img src="file (1).png" alt="Order Now" class="order-icon">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="screen.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div id="logo">
+          <a href="index.html">
+            <img src="LOGOOO.png" alt="Logo">
           </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="login.html">Log In</a></li>
+          <li>
+            <a href="orders.html">
+              <img src="file (1).png" alt="Order Now" class="order-icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="banner-section">
-    <img src="Untitled design.jpg" alt="Banner" class="banner-image">
-  </section>
+    <section class="banner-section">
+      <img src="Untitled design.jpg" alt="Banner" class="banner-image">
+    </section>
 
-  <main>
-    <div class="layout-container">
-      <section id="uploads">
-        <h2>Upload Your Pictures</h2>
-        <p>
-          Already have an image or idea that you want to come to life? Upload your images here and we can take care of the rest!
-        </p>
-        <button onclick="location.href='uploads.html'">Upload Pictures</button>
-      </section>
-
-      <section id="workshop">
-        <h2>Start Your Workshop</h2>
-        <p>
-          Do you have an idea that you want to create? Here you can let your imagination roam free! Create and build your own ideas while we make them a reality.
-        </p>
-        <button onclick="location.href='workshop.html'">Start Now</button>
-      </section>
-    </div>
-
+    <main>
+      <div class="layout-container">
+        <section id="uploads">
+          <h2>Upload Your Pictures</h2>
+          <p>
+            Already have an image or idea that you want to come to life? Upload your images here and we can take care of the rest!
+          </p>
+          <button onclick="location.href='uploads.html'">Upload Pictures</button>
+        </section>
+    
+        <section id="workshop">
+          <h2>Start Your Workshop</h2>
+          <p>
+            Do you have an idea that you want to create? Here you can let your imagination roam free! Create and build your own ideas while we make them a reality.
+          </p>
+          <button onclick="location.href='workshop.html'">Start Now</button>
+        </section>
+      </div>
+    
       <div class="content-wrapper">
         <div class="slideshow-section">
           <div id="slideshow">
@@ -60,45 +60,58 @@
             <img class="slide" src="e45c7e22140561254bfefb927dfffa13.jpg" alt="Slide 4">
           </div>
         </div>
-
+    
         <div class="right-align-sections">
           <div class="sale-section">
             <div class="sale-title">Sale Items</div>
             <div class="icon-container">
-              <img src="file (2).png" alt="Sale Item 1">
-              <img src="file (3).png" alt="Sale Item 2">
-              <img src="file (1).png" alt="Sale Item 3">
-            </div>
+              <div>
+                  <img src="file (2).png" alt="50% Off Icon">
+                  <p>50% off for first-time users. Check email for code!</p>
+              </div>
+              <div>
+                  <img src="file (3).png" alt="Holiday Sale Icon">
+                  <p>Holiday sale: Free shipping on orders over $100.</p>
+              </div>
+              <div>
+                  <img src="file (1).png" alt="Refer a Friend Icon">
+                  <p>Refer a friend for 20% off your next purchase.</p>
+              </div>
+          </div>
+      </div>
+    
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+              <summary>What is this website about?</summary>
+              <p>This website allows you to create custom Lego sets! </p>
+            </details>
+            <details>
+              <summary>How do I order items?</summary>
+              <p>Make or upload your idea and pick what kind of set you want!</p>
+            </details>
+            <details>
+              <summary>Can I customize my order any way I want?</summary>
+              <p> Yes you can, all designs go under an approval process letting you know if certain desings are allowed or not</p>
+            </details>
+            <details>
+              <summary>Is there shipping outside of the US?</summary>
+              <p> Sadly there is not.. YET we are looking to expand across North and South America and Eventually Internationally!</p>
+            </details>
           </div>
         </div>
       </div>
-      
-      <div class="faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-          <summary>What is this website about?</summary>
-          <p>
-            This website allows you to upload pictures, view workshops, and shop for products.
-          </p>
-        </details>
-        <details>
-          <summary>How do I order items?</summary>
-          <p>
-            You can browse sale items and click the "Order Now" button to make a purchase.
-          </p>
-        </details>
-      </div>
     </main>
+    
 
+      <footer>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </footer>
 
-    <footer>
-      <ul>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms & Conditions</a></li>
-      </ul>
-    </footer>
-
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

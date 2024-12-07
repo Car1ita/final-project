@@ -2,8 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #333;
-
 }
 
 header {
@@ -14,11 +12,10 @@ header {
 
 #logo img {
     max-width: 100%;
-    height: 30px;
+    height: 40px;
     object-fit: contain;
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -40,7 +37,7 @@ header {
 .nav-links a {
     color: #333;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -58,7 +55,6 @@ header {
     font-weight: bold;
 }
 
-/* Button Styling */
 button {
     padding: 8px 16px;
     font-size: 14px;
@@ -69,19 +65,6 @@ button {
 
 button:hover {
     opacity: 0.8;
-}
-
-/* Banner Section */
-.banner-section {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 main {
