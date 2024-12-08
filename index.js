@@ -1,24 +1,20 @@
 // Add JavaScript below
-let currentIndex = 0; // Start with the first slide
-const slides = document.querySelectorAll('#slideshow .slide'); // Select all slides
+let currentIndex = 0; 
+const slides = document.querySelectorAll('#slideshow .slide'); 
 
-// Function to show the current slide
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index); // Add "active" class to the current slide
+        slide.classList.toggle("active", i === index); 
     });
 }
 
-// Function to move to the next slide
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length; // Increment index and loop back at the end
-    showSlide(currentIndex); // Show the new current slide
+    currentIndex = (currentIndex + 1) % slides.length; 
+    showSlide(currentIndex); 
 }
 
-// Automatically move to the next slide every 3 seconds
 setInterval(nextSlide, 3000);
 
-// Show the first slide initially
 showSlide(currentIndex);
 
 

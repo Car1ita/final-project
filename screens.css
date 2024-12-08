@@ -80,6 +80,7 @@ button {
 
 button:hover {
     opacity: 0.8;
+    color: #CBF3F0;
 }
 
   
@@ -161,7 +162,7 @@ button:hover {
   }
   
   form button {
-    background-color: #4CAF50;
+    background-color: #FF9F1C;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -171,7 +172,7 @@ button:hover {
   }
   
   form button:hover {
-    background-color: #45a049;
+    background-color: #CBF3F0;
   }
   
   

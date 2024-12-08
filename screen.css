@@ -110,7 +110,7 @@ button:hover {
 
 #uploads h2, #workshop h2 {
     font-size: 25px;
-    color: #333;
+    color: #2EC4B6;
     margin-bottom: 10px;
 }
 
@@ -131,25 +131,25 @@ button:hover {
 }
 
 #uploads button:hover, #workshop button:hover {
-    background-color: #2EC4B6;
+    background-color: #CBF3F0;
 }
 
 .content-wrapper {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between; 
+    align-items: stretch;
+    justify-content:flex-start; 
     gap: 20px; 
     padding: 20px;
     box-sizing: border-box;
 }
 
 .slideshow-section {
-    flex: 3; 
+    flex: 2; 
     max-width: 600px; 
     height: 400px; 
-    overflow: hidden;
     background-color: #CBF3F0; 
     position: relative;
+    overflow: hidden;
 }
 
 #slideshow img {
@@ -158,7 +158,8 @@ button:hover {
     object-fit: cover; 
     position: absolute;
     opacity: 0;
-    border: 3px solid #2EC4B6;;
+    border: 3px solid #2EC4B6;
+    margin-left: -300px; 
     transition: opacity 1s ease-in-out; 
 }
 
@@ -215,12 +216,13 @@ button:hover {
 
 .icon-container img:hover {
     transform: scale(1.1);
-    border-color: #FF9F1C;
+    border-color: #CBF3F0;
 }
 
 .icon-container p {
     font-size: 14px; 
     line-height: 1.4; 
+    color: #666  ;
 }
 
 
@@ -238,6 +240,7 @@ button:hover {
 
 .faq-section p{
     font-size: 15px;
+    color: #666;
 }
 
 .faq-section details {
@@ -256,25 +259,26 @@ button:hover {
     color: #FF9F1C;
 }
 
+footer { 
+    background-color: #2EC4B6 ;
+    color: white;
+    padding: 1rem 0;
+  }
   
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-top: auto;
-}
-
-footer ul {
-    list-style: none;
+  footer ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+  }
+  
+  footer a {
+    color: white;
+    font-size: 16px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
 
 /* css for log in! */
 .container {
@@ -320,7 +324,7 @@ footer ul li a {
 
 .login-box button {
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #FF9F1C;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -330,7 +334,7 @@ footer ul li a {
 }
 
 .login-box button:hover {
-    background-color: #45a049;
+    background-color: #CBF3F0 ;
 }
 
 
@@ -340,7 +344,7 @@ footer ul li a {
 }
 
 .login-box a {
-    color: #4CAF50;
+    color: #2EC4B6;
     text-decoration: none;
 }
 
@@ -386,7 +390,7 @@ footer ul li a {
   
   
   .about-box, .box-image {
-    border: 2px solid #ccc; 
+    border: 2px solid #CBF3F0; 
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px; 
@@ -394,6 +398,9 @@ footer ul li a {
     text-align: center; 
   }
   
+  .about-box p{
+    color: #666;
+  }
 
   .box-image  img {
     width: 100%; 
@@ -430,7 +437,7 @@ footer ul li a {
 }
 
 .contact-items a {
-  color: #4CAF50;
+  color: #666;
   text-decoration: none;
 }
 
@@ -457,7 +464,7 @@ footer ul li a {
 
 .social-link {
   font-size: 1.5rem;
-  color: #4CAF50;
+  color: #CBF3F0;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
